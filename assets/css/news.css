@@ -1,0 +1,151 @@
+body{
+    --bg: #3b4da3;
+}
+
+
+.news{
+    padding: 0px 10%;
+    margin-bottom: 40px;
+}
+
+.news h2{
+    margin-bottom: 40px;
+}
+
+
+.news_container a{
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background: #3b3ba3;
+    border: 2px solid var(--bg);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.news_container a:hover{
+    border-color: var(--text);
+}
+
+.news_container a .img_wrap{
+    width: 200px;
+    margin-right: 10px;
+}
+.news_container a .img_wrap img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.news_container a  .text_wrap{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: calc(100% - 220px);
+}
+
+
+.news_container a  .text_wrap h4{
+    font-size: 20px;
+}
+
+.news_container a  .text_wrap span{
+   font-weight: 500;
+   margin-bottom: auto;
+}
+
+.news_container a  .text_wrap p{
+    margin: 10px 0px;
+}
+
+
+
+
+
+
+
+
+
+.about_news{
+    padding: 0px 10%;
+    margin-bottom: 40px;
+}
+
+.about_news h2{
+    margin-bottom: 40px;
+}
+
+.about_news img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about_news p{
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.about_news h4{
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+
+.about_news ul{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.about_news ul li{
+    margin-left: 30px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px){
+    .news{
+        padding: 0px 10px;
+    }
+    
+    .news_container a{
+        margin-bottom: 20px;
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        background: #3b3ba3;
+        border: 2px solid var(--bg);
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .news_container a:hover{
+        border-color: var(--text);
+    }
+    
+    .news_container a .img_wrap{
+        width: 100%;
+        margin-right: 0;
+    }
+    
+    .news_container a  .text_wrap{
+        width: 100%;
+    }
+    .news_container a  .text_wrap span{
+       margin-top: 10px;
+    }   
+
+
+
+
+    .about_news{
+        padding: 0px 10px;
+    }
+}
