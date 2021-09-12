@@ -176,3 +176,13 @@ for (var i = 0; i < linkNav.length; i++) {
         }
     }, false);
 }
+
+
+
+
+const collected = document.querySelector('.collected');
+let collected_count = '151 626 545 321';
+let year = new Date().getFullYear();
+
+
+collected.innerHTML = 'Собрано в <span>' + year + '</span> году <br> ' + collected_count + ' руб'

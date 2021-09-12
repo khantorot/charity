@@ -4,7 +4,7 @@ body{
 
 .about{
     padding: 0px 10%;
-    margin: 40px;
+    margin-bottom: 100px;
 }
 
 .about h2{
@@ -16,7 +16,7 @@ body{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 
@@ -26,7 +26,6 @@ body{
 
 .about_block .img_wrap{
     width: calc(45% - 20px);
-    height: 35vw;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -35,7 +34,7 @@ body{
 }
 
 .about_block .img_wrap img{
-    height: 100%;
+    width: 100%;
 }
 
 .about_block .text_wrap{
@@ -50,8 +49,8 @@ body{
 
 
 .about_block .text_wrap p{
-    font-size: 16px;
-    line-height: 25px;
+    font-size: 20px;
+    line-height: 35px;
     margin-top: 10px;
 }
 

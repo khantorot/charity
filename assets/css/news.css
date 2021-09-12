@@ -1,15 +1,15 @@
 body{
-    --bg: #3b4da3;
+    --bg: #aa307b;
 }
 
 
 .news{
     padding: 0px 10%;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
 }
 
 .news h2{
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 
@@ -18,7 +18,7 @@ body{
     width: 100%;
     padding: 10px;
     border-radius: 10px;
-    background: #3b3ba3;
+    background: #c74796;
     border: 2px solid var(--bg);
     display: flex;
     flex-wrap: wrap;
@@ -31,6 +31,7 @@ body{
 .news_container a .img_wrap{
     width: 200px;
     margin-right: 10px;
+    overflow: hidden;
 }
 .news_container a .img_wrap img{
     width: 100%;
@@ -42,11 +43,12 @@ body{
     flex-direction: column;
     flex-wrap: wrap;
     width: calc(100% - 220px);
+    padding: 10px;
 }
 
 
 .news_container a  .text_wrap h4{
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .news_container a  .text_wrap span{
@@ -68,11 +70,16 @@ body{
 
 .about_news{
     padding: 0px 10%;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
+}
+
+.about_news span{
+    font-weight: 700;
+    font-size: 14px;
 }
 
 .about_news h2{
-    margin-bottom: 40px;
+    margin: 20px 0;
 }
 
 .about_news img{
@@ -80,10 +87,16 @@ body{
     border-radius: 10px;
 }
 
+.about_news h5{
+    font-size: 25px;
+    width: 80%;
+    margin: 30px auto;
+}
+
 .about_news p{
-    margin-top: 20px;
+    margin: 20px 0;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 35px;
 }
 
 .about_news h4{
@@ -92,17 +105,21 @@ body{
 }
 
 
-.about_news ul{
-    font-weight: 700;
-    font-size: 18px;
-}
 
-.about_news ul li{
-    margin-left: 30px;
+.about_news a{
     font-size: 16px;
-    margin-top: 10px;
+    font-weight: 700;
+    border: 2px solid var(--text);
+    display: inline-block;
+    padding: 20px;
+    background: var(--index1);
+    border-radius: 10px;
+    transition: ease-out 0.2s;
 }
 
+.about_news a:hover{
+    background: var(--index);
+}
 
 
 
@@ -113,17 +130,6 @@ body{
 @media screen and (max-width: 800px){
     .news{
         padding: 0px 10px;
-    }
-    
-    .news_container a{
-        margin-bottom: 20px;
-        width: 100%;
-        padding: 10px;
-        border-radius: 10px;
-        background: #3b3ba3;
-        border: 2px solid var(--bg);
-        display: flex;
-        flex-wrap: wrap;
     }
     
     .news_container a:hover{

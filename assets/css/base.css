@@ -4,6 +4,7 @@ body{
     --text: #000;
 	--index: #bc1142;
 	--index1: #75a928;
+	--yellow: #cc8925;
     overflow-x: hidden;
     background: var(--bg);
     color: var(--text);
@@ -72,15 +73,17 @@ nav{
 .logo{
 	display: flex;
 	align-items: center;
+	justify-content: flex-start;
 }
 
 
 .logo img{
 	width: 70px;
-	margin-right: 5px;
+	margin-right: 10px;
 }
 
 .logo p{
+	position: relative;
 	font-size: 18px;
 	font-weight: 700;
 	display: flex;
@@ -91,14 +94,29 @@ nav{
 	color: var(--index1);
 }
 .logo p span:nth-child(2){
+	position: absolute;
+	right: -10px;
+	top: -15px;
+	font-size: 24px;
 	color: var(--text);
+	transition: ease-out 0.3s;
+	pointer-events: none;
+}
+.logo p span:nth-child(3){
+	color: var(--index);
 }
 
-nav h4{
+.logo:hover p span:nth-child(2) {
+	color: var(--yellow);
+}
+
+.collected{
+	font-weight: 700;
 	font-size: 18px;
 }
-nav h4 span{
+.collected span{
 	color: var(--index1);
+	font-size: 20px;
 }
 
 .help_btn{
@@ -225,7 +243,7 @@ footer h1{
 
 footer .contact_boxes{
 	width: 80%;
-	margin: 15% auto 7% auto;
+	margin: 13% auto 7% auto;
 	display: flex;
 	align-items: stretch;
 	justify-content: space-between;
@@ -251,10 +269,11 @@ footer .contact_boxes div a{
 	font-size: 18px;
 	font-weight: 700;
 	transition: 0.3s;
+	margin-top: 5px;
 }
 
 footer .contact_boxes div a:hover{
-	color: #bc1142;
+	color: var(--index);
 }
 
 footer .menu{
@@ -265,6 +284,7 @@ footer .menu{
 footer h5{
 	text-align: center;
 	margin: 20px 0px;
+	font-size: 12px;
 }
 
 
