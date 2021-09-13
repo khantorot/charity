@@ -7,7 +7,7 @@ body{
     padding: 0 10%;
     margin-bottom: 40px;
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -28,19 +28,15 @@ body{
     margin-bottom: 20px;
 }
 
-.work_item .img_wrap{
-    height: 20vw;
-    overflow: hidden;
-}
 
-
-.work_item .img_wrap img{
+.work_item img{
     width: 100%;
     margin: 10px 0px;
     border-radius: 10px;
 }
 
 .work_item h4{
+    margin-top: 10px;
     font-size: 20px;
 }
 
@@ -67,12 +63,13 @@ body{
     width: 100%;
     font-weight: 700;
     font-size: 14px;
+    margin-bottom: 10px;
 }
 
 .work_item a{
     padding: 10px 20px;
-    margin-top: 30px;
     margin-right: 10px;
+    margin-top: 10px;
     border: 2px solid var(--text);
     background: var(--bg);
     font-weight: 700;

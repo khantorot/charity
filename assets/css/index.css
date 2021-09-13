@@ -288,8 +288,7 @@ header .text_wrap a:last-child:hover{
 }
 
 .project_container a:hover{
-	background: var(--bg);
-	color: var(--index1);
+	background: var(--index1);
 }
 
 
@@ -309,25 +308,14 @@ header .text_wrap a:last-child:hover{
 .news_item{
 	background: #7cb428;
 	width: 300px;
-	display: flex;
-	align-items: flex-start;
-	justify-content: flex-start;
-	flex-direction: column;
 	padding: 20px;
 	margin: 20px 20px 0px 0px;
 	border-radius: 20px;
+	transition: ease-out 0.2s;
 }
 
-.news_item .img_wrap{
-	width: 100%;
-	border-radius: 10px;
-	overflow: hidden;
-	height: 150px;
-}
-
-.news_item .img_wrap img{
-	width: 100%;
-	transition: ease-out 0.3s;
+.news_item:hover{
+	background: var(--index1);
 }
 
 .news_item span{
@@ -339,8 +327,9 @@ header .text_wrap a:last-child:hover{
 	font-size: 14px;
 }
 
-.news_item a{
+.news_item p{
 	font-weight: 700;
+	font-size: 18px;
 	margin-top: 10px;
 	display: inline-block;
 	transition: 0.2s;
@@ -403,6 +392,7 @@ header .text_wrap a:last-child:hover{
 
 	header .text_wrap a{
 		font-size: 14px;
+		margin-right: 10px;
 	}
 
 
@@ -447,7 +437,7 @@ header .text_wrap a:last-child:hover{
 	.paths_menu{
 		top: 16%;
 		right: 34%;
-		height: 40vw;
+		height: 66vw;
 	}
 
 	.paths_menu ul::before{
@@ -514,14 +504,10 @@ header .text_wrap a:last-child:hover{
 
 
 
-	.project_section{
-		background: var(--index1);
-	}
-
 	.project_container a{
-		margin: 5px 5px 0px 0px;
-		padding: 20px 15px;
-		font-size: 14px;
+		font-size: 16px;
+		width: 100%;
+		margin-right: 0;
 	}
 
 
@@ -532,9 +518,7 @@ header .text_wrap a:last-child:hover{
 	}
 
 
-	.news_item span{
-		margin-bottom: 10px;
-		margin-left: 0;
-		margin-right: auto;
+	.feedback_section{
+		padding: 50px 10px;
 	}
 }
